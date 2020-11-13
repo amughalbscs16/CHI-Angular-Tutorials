@@ -1,0 +1,37 @@
+<div class = "childPage">
+    <div class = childMessage>
+        {{ childMessage }}
+        <br>
+        This is a list of awesome people: 
+            <div *ngFor = "let x of childMessageList" >
+                {{x}}
+            </div>
+    </div>
+
+    <div></div>
+
+    <br>
+    <div class="comments">
+        <label>
+            I'm the Kid : 
+            Please make sure to look at the comments of the following files. 
+        </label>
+        <br><br>
+        <table class="main-app-table">
+          <thead>
+            <tr>
+              <td><b>Filename</b></td>
+              <td><b>Description</b></td>
+            </tr>
+          </thead>
+          <tbody>  
+            <tr>
+              <td>child.component.ts</td>
+              <td>Typescript/Logic of the child component</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+</div>
