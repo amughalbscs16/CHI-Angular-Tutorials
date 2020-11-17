@@ -1,0 +1,15 @@
+    <div class = parent>
+      <div class = "childPage">
+        <h2>Mission Control</h2>
+        <button (click)="announce()">Announce mission</button>
+        <app-page-4-astronaut *ngFor="let astronaut of astronauts"
+          [astronaut]="astronaut">
+        </app-page-4-astronaut>
+        <h3>History</h3>
+        <ul>
+          <li *ngFor="let event of history">{{event}}</li>
+        </ul>
+      </div>
+      
+    </div>
+  
